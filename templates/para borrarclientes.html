@@ -1,0 +1,21 @@
+<html>
+<body>
+<h1>Clientes</h1>
+<ol>
+    {% for cliente in clientes %}
+    <li> {{cliente.nombres}} by {{cliente.apellidos}}</li>
+    <br>
+    {% endfor %}
+
+
+    {% for cliente in clientes %}
+    <li> {{cliente.nombres}} by {{cliente.apellidos}}   </li>
+    <a href="{{url_for('actualizarcliente', cliente_id = cliente.id )}}">
+        Edit
+    </a>
+    {% endfor %}
+
+
+</ol>
+</body>
+</html>

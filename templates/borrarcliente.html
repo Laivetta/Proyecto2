@@ -1,0 +1,23 @@
+<html>
+
+<body>
+
+  <a href="{{url_for('inicio')}}">
+    <button> inicio </button>
+  </a>
+
+  <hr>
+
+  <form action="{{ url_for('borrarcliente', cliente_id = cliente_id)}}" method="post">
+    <div class="form">
+      <label for="nombres"></label>
+      <input type="text" class="form" name="nombres" value="{{nombre}}">
+      <input type="text" class="form" name="nombres" value="{{apellido}}">
+      <button type="submit"> Borrar?</button>
+      </a>
+    </div>
+  </form>
+
+</body>
+
+</html>

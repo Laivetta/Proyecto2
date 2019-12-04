@@ -1,0 +1,39 @@
+<!-- aca estoy creando un boton de enlace para crear un nuevo cliente -->
+<!-- nuevocliente se refiere al app.route que figura en app.py -->
+<a href="{{url_for('nuevocliente')}}">
+  <button> Nuevo cliente </button>
+</a>
+
+<hr>
+
+{% block title %}Listado de Clientes{% endblock %}
+{% block contenido %}
+<h2>Clientes</h2>
+
+<ol>
+  {% for cliente in clientes %}
+  <!-- aca recibo la variable clientes y hago un for creando la variables cliente -->
+  <!-- mostrando cada uno de los valores de la tabla, donde los titulos de  -->
+  <!-- columna son las propiedades de la variables por eso esta el .nombres etc -->
+
+  <li> {{cliente.nombres}} -- {{cliente.apellidos}} -- {{cliente.dni}} -- {{cliente.cuota}}
+
+    <a href="{{url_for('actualizarcliente', cliente_id=cliente.id)}}">
+      Editar
+
+
+      <a href="{{url_for('borrarcliente', cliente_id = cliente.id )}}" style="margin-left: 10px;">
+        Borrar
+      </a>
+
+      
+  </li>
+  <br>
+  {% endfor %}
+
+
+
+</ol>
+
+
+{% endblock %}

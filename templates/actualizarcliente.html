@@ -1,0 +1,26 @@
+<html>
+
+<body>
+
+  <a href="{{url_for('inicio')}}">
+    <button> inicio </button>
+  </a>
+
+  <hr>
+
+  <form
+    action="{{ url_for('actualizarcliente', cliente_id=cliente_id, nombres_consulta=a, apellidos_consulta= apellidos_consulta, dni_consulta=dni_consulta)}}"
+    method="post">
+    <div class="form">
+      <label for="nombres"></label>
+      <input type="text" class="form" name="nombres" value="{{nombres_consulta}}">
+      <input type="text" class="form" name="apellidos" value="{{apellidos_consulta}}">
+      <input type="text" class="form" name="dni" value="{{dni_consulta}}">
+      <button type="submit"> actualizar?</button>
+      </a>
+    </div>
+  </form>
+
+</body>
+
+</html>

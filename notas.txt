@@ -1,0 +1,7 @@
+https://kite.com/blog/python/flask-sqlalchemy-tutorial/
+https://github.com/kiteco/kite-python-blog-post-code/tree/master/flask-tutorial
+
+muestra de a poco como hacer un crud -> https://www.youtube.com/watch?v=HXKDyZ_W6rI
+
+
+mike colbert --> explica todo --> https://www.youtube.com/watch?v=HKmvJasHKWI
