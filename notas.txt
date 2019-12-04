@@ -5,3 +5,8 @@ muestra de a poco como hacer un crud -> https://www.youtube.com/watch?v=HXKDyZ_W
 
 
 mike colbert --> explica todo --> https://www.youtube.com/watch?v=HKmvJasHKWI
+
+
+
+
+SqlAlchemy cheat shett-->  https://github.com/crazyguitar/pysheeet/blob/master/docs/notes/python-sqlalchemy.rst#set-a-database-url
